@@ -1,4 +1,4 @@
-﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TageHelpers 
+﻿
 
 <!DOCTYPE html>
 
@@ -11,15 +11,15 @@
 <body>
     @*Html Tags*@
     @*Start Header*@
-   @*  <Center>
+    @* <Center>
         <div class="m-5">
             <a href="/Home/Index" class="btn btn-primary">Home</a>
             <a href="/Home/AboutUs" class="btn btn-success">About Us</a>
             <a href="/Home/ContactUs" class="btn btn-danger">Contact Us</a>
             <a href="/Home/Privacy" class="btn btn-warning">Privacy</a>
         </div>
-    </Center>
- *@
+    </Center> *@
+
     @*End Header*@
 
     @*html Helper*@
@@ -34,12 +34,12 @@
 
    @*Tag Helper*@
     <center>
-        <nav class="mt-5">
+        <div class="mt-5">
             <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>
             <a asp-controller="Home" asp-action="AboutUs" class="btn btn-danger">About Us</a>
             <a asp-controller="Home" asp-action="ContactUs" class="btn btn-success">Contact Us</a> 
             <a asp-controller="Home" asp-action="Privacy" class="btn btn-warning">Privacy</a>
-        </nav>
+        </div>
     </center>
     <div>
         @RenderBody()
